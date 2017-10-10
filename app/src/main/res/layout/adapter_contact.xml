@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="4dp">
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:padding="5dp"
+         android:orientation="horizontal">
+
+e         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/profile_image"
+             android:layout_width="96dp"
+             android:layout_height="96dp"
+             android:src="@drawable/apple" />
+
+         <TextView
+             android:id="@+id/name_textView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="15dp"
+             android:text="Rajiv Kulshreshtha" />
+
+     </LinearLayout>-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="User Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvName"
+            android:text="(111) 222-333"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvPhone"
+            android:layout_alignBottom="@+id/tvPhone"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/tvPhone"
+            android:paddingLeft="5dp"
+            android:text="test@test.com"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#575757" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
